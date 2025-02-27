@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
 </head>
 <body>
     <article class="container-login">
         <form action="" method="post" class="container-form">
             <fieldset class="container-fiel">
                 <legend class="title-form">Login</legend>
+                <label class="all-label" for="nome" id="nome">Nome</label>
+                <input class="all-input" type="text" id="nome" name="nome" placeholder="Digite seu nome completo" minlength="3" maxlength="30" required>
                 <label class="all-label" for="email" id="email">Email</label>
                 <input class="all-input" type="email" id="email" name="email" placeholder="Digite um email valido" minlength="7" maxlength="30" required>
                 <label class="all-label" for="password" id="password">Senha </label>
-                <input class="pass all-input" type="password" id="password" name="password" placeholder="Digite sua senha" minlength="6"
+                <input class="pass all-input" type="password" id="password" name="password" placeholder="Crie uma senha" minlength="6"
                 maxlength="12" required>
-                <input type="submit" value="Entrar" class="btn-submit">
+                <input type="submit" value="Criar" class="btn-submit">
                 <div class="caixa-link">
-                    <a href="#" class="link-login">Esqueceu a senha?</a>
-                    <a href="cadastro.html" class="link-login link-login">Cadastrar-se</a>
+                    <a href="index.html" class="link-login link-login">Já possuí uma conta? Faça login</a>
                 </div>
             </fieldset>
         </form>
