@@ -6,6 +6,7 @@
     --form-color: #ffffff;
     --text-color: #071013;
     --back-btn: #00A5CF; /*#4CAF50*/
+    --back-input: rgb(247, 247, 247);
 } 
 
 * {
@@ -55,16 +56,17 @@ body {
 .all-input {
     margin-bottom: 2rem;
     padding:.5rem;
-    border: none;
+    border: 2px solid transparent;
     border-radius: .4rem;
     outline: none;
+    background-color: var(--back-input);
 }
 
 
-.all-input:invalid {
+.all-input:invalid:focus {
     border-bottom: 2px solid red;
 }
-.all-input:valid {
+.all-input:valid:focus {
     border-bottom: 2px solid rgb(0, 255, 0)
 }
 .all-input:focus {
